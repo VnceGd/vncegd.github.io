@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Reference: https://www.w3schools.com/tags/tag_meta.asp -->
+        <meta charset="utf-8">
+        <meta name="description" content="Vincent Nguyen personal website 2020">
+        <meta name="keywords" content="Personal, Website, Gamer, Developer, Modern, Design, HTML, CSS, SVG, JavaScript">
+        <meta name="author" content="Vincent Nguyen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="images/vtn-logo.svg">
+
+        <title>Vincent Nguyen | Home</title>
+
+        <link rel="stylesheet" href="style/main.css">
+        <link rel="stylesheet" href="style/nav.css">
+
+        <!-- Reference: https://stackoverflow.com/a/56423507 -->
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial&display=swap">
+    </head>
+    <body>
+        <nav>
+            <!-- Reference: https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/ -->
+            <a id="logo" href="#"><img src="images/vtn-logo.svg" alt="Logo"></a>
+            <label id="hamburger-label" for="hamburger" tabindex="0"><img src="images/hamburger.svg" alt="Hamburger menu"></label>
+            <input type="checkbox" id="hamburger">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="hero">
+            <div class="container">
+                <div id="hero-content">
+                    <h1>Vincent Nguyen</h1>
+                    <h2>Gamer. Developer.</h2>
+                    <h3><a href="#projects">Browse projects</a></h3>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <h1 class="section-header">About</h1>
+                <p>B.S. Computer Science, Concentration in Game Programming and Development, Drexel University Class of 2021</p>
+                <p>Aspiring independent game developer</p>
+                <p>Web development, logo design, and pixel art hobbyist</p>
+                <p>Casual solo gamer</p>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="container">
+                <h1 class="section-header">Projects</h1>
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-thumb">
+                            <a href="https://area52p.com" target="_blank"><img src="images/vtn-logo.svg" alt="Cow-duction (placeholder)"></a>
+                        </div>
+                        <div class="card-body">
+                            <h3>Cow-duction: The Milkening</h3>
+                            <span class="date">Sep 2019 - Present</span>
+                            <p>Feel the moo-tions of the game on the Drexel Voyager motion platform! <br> Term project for Game Development Workshop I/II.</p>
+                            <a href="https://area52p.com" target="_blank">View</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-thumb">
+                            <a href="#projects"><img src="images/vtn-logo.svg" alt="Board & Shield (placeholder)"></a>
+                        </div>
+                        <div class="card-body">
+                            <h3>Board & Shield</h3>
+                            <span class="date">Sep 2019 - Present</span>
+                            <p>The shot in the arm extreme sports games need. <br> Senior project collaboration between Drexel Westphal and CCI.</p>
+                            <a href="#projects">Site Coming Soon</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-thumb">
+                            <a href="https://vncegd.github.io/random" target="_blank"><img src="images/vtn-logo.svg" alt="Random Games (placeholder)"></a>
+                        </div>
+                        <div class="card-body">
+                            <h3>Random Games</h3>
+                            <span class="date">Aug 2018 - Aug 2019</span>
+                            <p>BlessRNG <br> Individual project for practice creating responsive in-browser games.</p>
+                            <a href="https://vncegd.github.io/random" target="_blank">View</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-thumb">
+                            <a href="https://vncegd.github.io/Double-Time-Dash" target="_blank"><img src="images/vtn-logo.svg" alt="Double Time Dash (placeholder)"></a>
+                        </div>
+                        <div class="card-body">
+                            <h3>Double Time Dash</h3>
+                            <span class="date">Feb - Mar 2019</span>
+                            <p>3D platform racing game. <br> Final project for Computer Game Design and Development.</p>
+                            <a href="https://vncegd.github.io/Double-Time-Dash" target="_blank">View</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/VnceGd?tab=repositories" target="_blank">More projects on GitHub</a>
+            </div>
+        </section>
+        <section id="blog">
+            <div class="container">
+                <h1 class="section-header">Blog</h1>
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-thumb">
+                            <a href="blog/hello-2020.html"><img src="images/vtn-logo.svg" alt="Hello, 2020"></a>
+                        </div>
+                        <div class="card-body">
+                            <h3>Hello, 2020</h3>
+                            <span class="date">05 Jan 2020</span>
+                            <p>New year, new website</p>
+                            <a href="blog/hello-2020.html">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h1 class="section-header">Contact</h1>
+                <h3>Message</h3>
+                    <p><span class="highlight">Email</span> <a class="email" href="mailto:vtn28@drexel.edu">vtn28@drexel.edu</a></p>
+                    <p><span class="highlight">Phone</span> 484 557 2309</p>
+                    <p><span class="highlight">Discord</span> ZevinLevin#4019</p>
+                <h3>Follow</h3>
+                    <p id="follow-buttons">
+                        <a href="https://github.com/vncegd" target="_blank">GitHub</a>
+                        <a href="https://linkedin.com/in/vtn28" target="_blank">LinkedIn</a>
+                        <a href="https://facebook.com/16nguyenv" target="_blank">Facebook</a>
+                        <a href="https://twitter.com/zevinlevin" target="_blank">Twitter</a>
+                        <a href="https://instagram.com/zevinlevin" target="_blank">Instagram</a>
+                        <a href="https://youtube.com/channel/UCK9phU1rhKDBEuyxpq6uBQQ" target="_blank">YouTube</a>
+                        <a href="https://steamcommunity.com/id/vincegd/" target="_blank">Steam</a>
+                        <a href="https://osu.ppy.sh/users/4890690" target="_blank">osu!</a>
+                    </p>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <p>Vincent Nguyen 2020</p>
+            </div>
+        </footer>
+        <script src="nav.js"></script>
+    </body>
+</html>
