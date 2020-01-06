@@ -1,0 +1,7 @@
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 1">
+    <path fill="#0ff" d="M.5 .1 L1.4 .1 L1.8 .5 L1.1 .5 L1.1 .9 L.7 .9 L.7 .5 L.1 .5 Z"/>
+    <g fill="#ff0">
+        <path d="M.1 .1 L.5 .1 L.9 .5 L.5 .9 L.1 .9 L.5 .5 Z"/>
+        <path d="M1.1 .1 L1.5 .1 L1.9 .5 L1.5 .9 L1.1 .9 L1.5 .5 Z"/>
+    </g>
+</svg>
