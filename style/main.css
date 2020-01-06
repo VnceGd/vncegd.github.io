@@ -126,7 +126,7 @@ a:hover, a:focus, a:active {
         grid-template-columns: repeat(3, 1fr);
     }
 }
-@media(max-width: 699px) {
+@media(max-width: 799px) {
     .card-group {
         grid-template-columns: repeat(2, 1fr);
     }
