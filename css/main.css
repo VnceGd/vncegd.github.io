@@ -33,7 +33,7 @@ a:hover, a:focus, a:active {
 }
 #hero {
     height: 100%;
-    background-image: linear-gradient(#0000, #0008), url("../images/vtn-min-tri.svg");
+    background-image: linear-gradient(#0000, #0008), url("../img/vtn-min-tri.svg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -69,9 +69,10 @@ a:hover, a:focus, a:active {
 .card-thumb {
     height: 10rem;
     background: #077;
-    background-image: linear-gradient(#0000, #0008), url("../images/vtn-min-square.svg");
+    background-image: linear-gradient(#0000, #0008), url("../img/vtn-min-square.svg");
     background-position: center;
     background-size: 100%;
+    background-repeat: space;
     overflow: hidden;
     transition: background-size .2s;
 }
@@ -132,7 +133,7 @@ a:hover, a:focus, a:active {
     float: left;
 }
 footer {
-    background-image: linear-gradient(#000, #0008), url("../images/vtn-min-square.svg");
+    background-image: linear-gradient(#000, #0008), url("../img/vtn-min-square.svg");
     background-position: center;
     background-size: cover;
 }

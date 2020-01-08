@@ -1,6 +1,6 @@
 #blog {
     min-height: 100%;
-    background-image: linear-gradient(#0000, #000 20rem), url("../images/vtn-min-square.svg");
+    background-image: linear-gradient(#0000, #000 20rem), url("../img/vtn-min-square.svg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

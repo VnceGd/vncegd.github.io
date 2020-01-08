@@ -1,0 +1,90 @@
+nav {
+    position: fixed;
+    padding: 1rem 3rem;
+    width: 100%;
+    transition: background-color .2s;
+    z-index: 99;
+}
+nav img {
+    height: 48px;
+}
+nav #logo {
+    float: left;
+    padding: 0;
+    height: 48px;
+    background: #000;
+    border: 0;
+    border-radius: 50%;
+}
+nav #logo:hover, nav #logo:focus {
+    background: #033;
+}
+nav ul {
+    display: none;
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    padding: 0;
+    width: 50%;
+    min-width: 15rem;
+}
+nav ul li {
+    display: block;
+    text-align: right;
+    transition: .2s;
+}
+nav ul li a {
+    display: inline-block;
+    padding: 2rem 3.5rem;
+    width: 100%;
+    background: #033;
+    color: #fff;
+    border: 0;
+}
+nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
+    padding-right: 6rem;
+    background: #fff;
+    color: #000;
+}
+nav label {
+    display: block;
+    float: right;
+    height: 48px;
+    cursor: pointer;
+}
+#hamburger {
+    display: none;
+}
+nav input:checked ~ ul {
+    display: block;
+}
+
+@media(min-width: 769px) {
+    nav label {
+        display: none;
+    }
+    nav ul {
+        display: block;
+        position: relative;
+        float: right;
+        top: 0;
+        width: auto;
+    }
+    nav ul li {
+        display: inline-block;
+        background: 0;
+    }
+    nav ul li a {
+        padding: 1rem;
+        background: 0;
+    }
+    nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
+        padding: 1rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    nav ul li a {
+        transition: none;
+    }
+  }
