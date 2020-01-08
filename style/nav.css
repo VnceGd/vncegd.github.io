@@ -5,24 +5,16 @@ nav {
     transition: background-color .2s;
     z-index: 99;
 }
-nav ul {
-    float: right;
-    padding: 0;
-    list-style-type: none;
-    overflow: hidden;
-}
-nav ul li {
-    display: inline-block;
-    line-height: 48px;
-}
 nav ul li a {
-    background: 0;
     color: #fff;
     border: 0;
 }
 nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
     background: #fff;
     color: #000;
+}
+#hamburger {
+    display: none;
 }
 nav img {
     height: 48px;
@@ -38,11 +30,8 @@ nav #logo {
 nav #logo:hover, nav #logo:focus {
     background: #033;
 }
-nav label, #hamburger {
-    display: none;
-}
 
-@media(max-width: 699px) {
+@media(max-width: 768px) {
     nav label {
         display: block;
         float: right;
@@ -54,24 +43,49 @@ nav label, #hamburger {
         position: absolute;
         top: 5rem;
         right: 0;
+        padding: 0;
         width: 50%;
         min-width: 15rem;
     }
     nav ul li {
         display: block;
-        background-color: #033;
         text-align: right;
         transition: .2s;
     }
     nav ul li a {
         display: inline-block;
-        padding-right: 4rem;
+        padding: 2rem 3.5rem;
+        background: #033;
         width: 100%;
     }
-    nav ul li a:hover {
+    nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
         padding-right: 6rem;
     }
     nav input:checked ~ ul {
         display: block;
     }
 }
+@media(min-width: 768px) {
+    nav label {
+        display: none;
+    }
+    nav ul {
+        float: right;
+        list-style-type: none;
+        overflow: hidden;
+    }
+    nav ul li {
+        display: inline-block;
+        line-height: 48px;
+        background: 0;
+    }
+    nav ul li a {
+        background: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    nav ul li a {
+        transition: none;
+    }
+  }
