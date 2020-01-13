@@ -33,6 +33,12 @@
     <body>
         <nav>
             <a id="logo" href=""><img src="img/vtn-logo.svg" alt="Logo"></a>
+            <button id="theme-btn" aria-label="Toggle theme button">
+                <svg viewBox="0 0 1 1">
+                    <title>Toggle theme</title>
+                    <path d="M.5 1 A.5 .5 0 1 1 1 .5" aria-label="Toggle theme path"/>
+                </svg>
+            </button>
             <label id="hamburger-label" for="hamburger" tabindex="0"><img src="img/hamburger.svg" alt="Hamburger menu"></label>
             <input type="checkbox" id="hamburger">
             <ul>
@@ -46,38 +52,41 @@
             <div class="container">
                 <h1>Styling and Social Cards</h1>
                 <h2>08 January 2020</h2>
-                <p>
-                    These past few days I've been making some style changes to my website mostly affecting the background images, and have also been looking into social card previews that are created when people share my website.
-                </p>
-                <p>
-                    I found out about <code>linear-gradient()</code> recently, specifically using it alongside an image url, and have been messing around with applying it to a bunch of elements on my website.
-                    It can create some cool-looking effects and also helps to increase contrast between the foreground and background in a subtle way.
-                    I wasn't a huge fan of gradients before, but it looks like their effectiveness depends on the use case.
-                </p>
-                <p>
-                    I also recently came across <code>filter: drop-shadow()</code> which I applied to the logos on project and blog cards.
-                    It makes the logos pop even more when used in addition to the soft background gradient.
-                    It's basically used instead of <code>box-shadow</code> for non-rectangular shapes.
-                </p>
-                <p>
-                    I've also been experimenting with <code>og</code> and <code>twitter</code> meta properties to make the website display as a card when shared on social networks such as LinkedIn, Facebook, and Twitter.
-                    I don't expect anyone to be sharing this since I don't have share buttons, but the <code>meta</code> tags in the header can act as a template which anyone may use.
-                </p>
-                <p>
-                    One thing I might need to look into is a way for me to only need to change the title of a blog post in a single place (or set up a better template).
-                    Currently, I've been needing to adjust <code>title</code>, <code>description</code>, <code>url</code>, and the name of the html file itself as well as any links to it, which has been time consuming since I'm constantly thinking of ways to reword the title of the post.
-                    I also haven't been integrating images into my blog posts yet, and it might be useful to research a modular way to position images such that it could allow for a variable number of images on one line or aligned in a certain way, regardless of width or height, while also being responsive.
-                </p>
-                <p>
-                    Anyways, I'm writing this at 1am after a long day and would be better off getting some rest.
-                    It's possible that I will edit or delete posts from my published site, but if for some reason you want to dig into my GitHub commits to see previous versions, feel free.
-                    Even if no one reads my blog, it'll still exist somewhere on the Internet.
-                </p>
+                <div class="post">
+                    <p>
+                        These past few days I've been making some style changes to my website mostly affecting the background images, and have also been looking into social card previews that are created when people share my website.
+                    </p>
+                    <p>
+                        I found out about <code>linear-gradient()</code> recently, specifically using it alongside an image url, and have been messing around with applying it to a bunch of elements on my website.
+                        It can create some cool-looking effects and also helps to increase contrast between the foreground and background in a subtle way.
+                        I wasn't a huge fan of gradients before, but it looks like their effectiveness depends on the use case.
+                    </p>
+                    <p>
+                        I also recently came across <code>filter: drop-shadow()</code> which I applied to the logos on project and blog cards.
+                        It makes the logos pop even more when used in addition to the soft background gradient.
+                        It's basically used instead of <code>box-shadow</code> for non-rectangular shapes.
+                    </p>
+                    <p>
+                        I've also been experimenting with <code>og</code> and <code>twitter</code> meta properties to make the website display as a card when shared on social networks such as LinkedIn, Facebook, and Twitter.
+                        I don't expect anyone to be sharing this since I don't have share buttons, but the <code>meta</code> tags in the header can act as a template which anyone may use.
+                    </p>
+                    <p>
+                        One thing I might need to look into is a way for me to only need to change the title of a blog post in a single place (or set up a better template).
+                        Currently, I've been needing to adjust <code>title</code>, <code>description</code>, <code>url</code>, and the name of the html file itself as well as any links to it, which has been time consuming since I'm constantly thinking of ways to reword the title of the post.
+                        I also haven't been integrating images into my blog posts yet, and it might be useful to research a modular way to position images such that it could allow for a variable number of images on one line or aligned in a certain way, regardless of width or height, while also being responsive.
+                    </p>
+                    <p>
+                        Anyways, I'm writing this at 1am after a long day and would be better off getting some rest.
+                        It's possible that I will edit or delete posts from my published site, but if for some reason you want to dig into my GitHub commits to see previous versions, feel free.
+                        Even if no one reads my blog, it'll still exist somewhere on the Internet.
+                    </p>
+                </div>
             </div>
         </section>
         <section id="arrows">
             <div class="container">
-                <a href="blog/hello-2020.html"><img id="left-arrow" src="img/vtn-min-tri.svg">Hello, 2020</a>
+                <a href="blog/hello-2020.html"><img id="left-arrow" src="img/vtn-min-tri.svg" alt="Left arrow">Hello, 2020</a>
+                <a href="blog/drexel-winter-2020-week-1.html">Drexel Winter 2020 Week 1<img id="right-arrow" src="img/vtn-min-tri.svg" alt="Right arrow"></a>
             </div>
         </section>
         <footer>
@@ -86,5 +95,6 @@
             </div>
         </footer>
         <script src="js/nav.js"></script>
+        <script src="js/theme.js"></script>
     </body>
 </html>

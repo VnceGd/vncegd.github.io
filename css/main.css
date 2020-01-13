@@ -1,11 +1,26 @@
+/* Dark theme default */
+:root {
+    --bg-color: #000;
+    --bg-brightness: 100%;
+    --fg-color: #fff;
+    --date-color: #ddd;
+    --code-bg: #222;
+}
+:root[theme='toggle'] {
+    --bg-color: #fff;
+    --bg-brightness: 150%;
+    --fg-color: #000;
+    --date-color: #222;
+    --code-bg: #ddd;
+}
 * {
     margin: 0;
     box-sizing: border-box;
 }
 html, body {
     height: 100%;
-    background: #000;
-    color: #fff;
+    background: var(--bg-color);
+    color: var(--fg-color);
     font-family: 'Questrial', sans-serif;
     scroll-behavior: smooth;
 }
@@ -14,29 +29,30 @@ p, h1, h2, h3, h4 {
 }
 code {
     padding: .1rem .2rem;
-    background: #222;
+    background: var(--code-bg);
     border-radius: .2rem;
 }
 a {
     padding: 1rem;
-    background: #fff;
-    color: #000;
-    border: 1px solid #fff;
+    background: var(--fg-color);
+    color: var(--bg-color);
+    border: 1px solid var(--fg-color);
     text-decoration: none;
     cursor: pointer;
     transition: .2s;
 }
 a:hover, a:focus, a:active {
-    background: #0008;
-    color: #fff;
+    background: var(--bg-color);
+    color: var(--fg-color);
     transition: .2s;
 }
 #hero {
     height: 100%;
-    background-image: linear-gradient(#0000, #0008), url("../img/vtn-min-tri.svg");
+    background-image: url("../img/vtn-min-tri.svg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    filter: brightness(var(--bg-brightness));
 }
 #hero .container {
     display: flex;
@@ -59,7 +75,8 @@ a:hover, a:focus, a:active {
 }
 .card-group {
     display: grid;
-    grid-gap: 1rem;
+    margin-bottom: 2rem;
+    grid-gap: 2rem 1rem;
     grid-template-columns: 1fr;
 }
 .card {
@@ -100,32 +117,33 @@ a:hover, a:focus, a:active {
 .card-body {
     height: 60%;
 }
-.card-body a {
+.card-body a, #more-projects {
     padding: .5rem 2rem;
 }
 #more-projects {
-    margin-top: 1rem;
     display: block;
     text-align: center;
 }
 .date {
-    color: #ddd;
+    color: var(--date-color);
     font-size: .9rem;
+    transition: color .2s;
 }
 .highlight {
     margin-right: .25rem;
     padding: .25rem .5rem;
-    background: #fff;
-    color: #000;
+    background: var(--fg-color);
+    color: var(--bg-color);
     font-weight: bold;
 }
 .email, footer a {
     padding: 0;
     background: 0;
-    color: #fff;
+    color: var(--fg-color);
     border: 0;
 }
 .email:hover, footer a:hover {
+    background: 0;
     text-decoration: underline;
 }
 #follow-buttons a {
@@ -133,7 +151,7 @@ a:hover, a:focus, a:active {
     float: left;
 }
 footer {
-    background-image: linear-gradient(#000, #0008), url("../img/vtn-min-square.svg");
+    background-image: linear-gradient(var(--bg-color), #0000), url("../img/vtn-min-square.svg");
     background-position: center;
     background-size: cover;
 }
@@ -154,11 +172,27 @@ footer {
     }
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media screen and (prefers-reduced-motion: reduce) {
     html, body {
-      scroll-behavior: auto;
+        scroll-behavior: auto;
     }
     .card-thumb, .card-thumb:hover, .card-thumb:focus, .card-thumb img {
         transition: none;
     }
-  }
+}
+@media screen and (prefers-color-scheme: light) {
+    :root {
+        --bg-color: #fff;
+        --bg-brightness: 150%;
+        --fg-color: #000;
+        --date-color: #222;
+        --code-bg: #ddd;
+    }
+    :root[theme='toggle'] {
+        --bg-color: #000;
+        --bg-brightness: 100%;
+        --fg-color: #fff;
+        --date-color: #ddd;
+        --code-bg: #222;
+    }
+}

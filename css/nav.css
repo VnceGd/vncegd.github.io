@@ -19,6 +19,26 @@ nav #logo {
 nav #logo:hover, nav #logo:focus {
     background: #033;
 }
+nav #theme-btn {
+    display: inline-flex;
+    margin: .5rem;
+    padding: 0;
+    width: 2rem;
+    height: 2rem;
+    background: var(--fg-color);
+    border: .25rem solid var(--fg-color);
+    border-radius: 50%;
+    opacity: .5;
+}
+nav #theme-btn svg {
+    margin: auto;
+    width: 2rem;
+    fill: var(--bg-color);
+}
+nav #theme-btn:hover, nav #theme-btn:focus {
+    border-color: var(--bg-color);
+    opacity: 1;
+}
 nav ul {
     display: none;
     position: absolute;
@@ -59,7 +79,7 @@ nav input:checked ~ ul {
     display: block;
 }
 
-@media(min-width: 769px) {
+@media(min-width: 768px) {
     nav label {
         display: none;
     }
@@ -72,7 +92,6 @@ nav input:checked ~ ul {
     }
     nav ul li {
         display: inline-block;
-        background: 0;
     }
     nav ul li a {
         padding: 1rem;
@@ -83,8 +102,8 @@ nav input:checked ~ ul {
     }
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media screen and (prefers-reduced-motion: reduce) {
     nav ul li a {
         transition: none;
     }
-  }
+}

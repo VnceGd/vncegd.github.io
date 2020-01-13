@@ -28,6 +28,12 @@
     <body>
         <nav>
             <a id="logo" href="#"><img src="img/vtn-logo.svg" alt="Logo"></a>
+            <button id="theme-btn" aria-label="Toggle theme button">
+                <svg viewBox="0 0 1 1">
+                    <title>Toggle theme</title>
+                    <path d="M.5 1 A.5 .5 0 1 1 1 .5" aria-label="Theme path"/>
+                </svg>
+            </button>
             <label id="hamburger-label" for="hamburger" tabindex="0"><img src="img/hamburger.svg" alt="Hamburger menu"></label>
             <input type="checkbox" id="hamburger">
             <ul>
@@ -113,6 +119,17 @@
                 <div class="card-group">
                     <div class="card">
                         <div class="card-thumb">
+                            <a href="blog/drexel-winter-2020-week-1.html"><img src="img/vtn-logo.svg" alt="Drexel Winter 2020 Week 1"></a>
+                        </div>
+                        <div class="card-body">
+                            <h3>Drexel Winter 2020 Week 1</h3>
+                            <span class="date">13 Jan 2020</span>
+                            <p>Recap of the first week of classes for Winter Quarter 2019-2020.</p>
+                            <a href="blog/drexel-winter-2020-week-1.html">View</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-thumb">
                             <a href="blog/styling-and-social-cards.html"><img src="img/vtn-logo.svg" alt="Styling and Social Cards"></a>
                         </div>
                         <div class="card-body">
@@ -162,5 +179,6 @@
             </div>
         </footer>
         <script src="js/nav.js"></script>
+        <script src="js/theme.js"></script>
     </body>
 </html>

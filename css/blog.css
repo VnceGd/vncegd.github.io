@@ -1,6 +1,6 @@
 #blog {
     min-height: 100%;
-    background-image: linear-gradient(#0000, #000 20rem), url("../img/vtn-min-square.svg");
+    background-image: linear-gradient(#0000, var(--bg-color)), url("../img/vtn-min-square.svg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -9,8 +9,21 @@
     margin-top: 2rem;
     font-size: 4rem;
 }
+#blog h1, #blog h2 {
+    color: #fff;
+}
+#blog h3 {
+    font-size: 1.3rem;
+}
 #blog p, #blog ul {
     font-size: 1.25rem;
+}
+#blog ul li {
+    padding: .25rem;
+}
+.post {
+    padding: 0 1rem;
+    background: linear-gradient(var(--bg-color), #0000);
 }
 #arrows {
     text-align: center;
