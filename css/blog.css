@@ -28,6 +28,12 @@
 #arrows {
     text-align: center;
 }
+#arrows a {
+    display: block;
+}
+#arrows a:nth-child(2) {
+    margin-top: 1rem;
+}
 #left-arrow, #right-arrow {
     width: 1rem;
 }
@@ -36,4 +42,13 @@
 }
 #right-arrow {
     transform: rotate(-90deg);
+}
+
+@media(min-width: 600px) {
+    #arrows a {
+        display: initial;
+    }
+    #arrows a:nth-child(2) {
+        margin-top: 0;
+    }
 }

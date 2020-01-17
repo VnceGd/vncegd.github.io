@@ -45,7 +45,7 @@ nav ul {
     top: 5rem;
     right: 0;
     padding: 0;
-    width: 50%;
+    width: 100%;
     min-width: 15rem;
 }
 nav ul li {
@@ -62,7 +62,7 @@ nav ul li a {
     border: 0;
 }
 nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
-    padding-right: 6rem;
+    font-weight: bold;
     background: #fff;
     color: #000;
 }
@@ -98,7 +98,7 @@ nav input:checked ~ ul {
         background: 0;
     }
     nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
-        padding: 1rem;
+        font-weight: initial;
     }
 }
 

@@ -1,5 +1,9 @@
+// Nav background
 document.addEventListener("DOMContentLoaded", function () {
     let nav = document.querySelector("nav");
+
+    if (document.scrollingElement.scrollTop > 0)
+        nav.style.background = "#000";
 
     document.onscroll = function (e) {
         if (e.target.scrollingElement.scrollTop > 0) {
@@ -10,18 +14,35 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 });
 
-const input = document.getElementById("hamburger-label");
+// Hamburger menu
+const hamburgerLabel = document.getElementById("hamburger-label");
+const navButtons = document.getElementsByClassName("nav-btn");
 
-input.onkeydown = toggleDropdown;
+document.onkeydown = function(e) {
+    if (e.code == "Escape")
+        toggleDropdown(e);
+}
+hamburgerLabel.onkeydown = function(e) {
+    if (e.code == "Enter")
+        toggleDropdown(e);
+}
+for(let n = 0; n < navButtons.length; n++) {
+    let btn = navButtons[n];
+
+    btn.addEventListener('keydown', (e) => {
+        if (e.code == "Escape" || e.code == "Enter")
+            toggleDropdown(e);
+    });
+    btn.addEventListener('click', (e) => {
+        toggleDropdown(e)
+    });
+}
 
 function toggleDropdown(e) {
-    if (e.code != "Enter")
-        return;
-    
     let hamburger = document.getElementById("hamburger");
 
-    if (hamburger.checked)
+    if (hamburger.checked && e.code != "Enter")
         hamburger.checked = false;
-    else
+    else if (e.code != "Escape")
         hamburger.checked = true;
 }
