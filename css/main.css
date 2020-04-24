@@ -1,17 +1,19 @@
 /* Dark theme default */
 :root {
-    --bg-color: #000;
-    --bg-brightness: 100%;
-    --fg-color: #fff;
-    --date-color: #ddd;
+    --bg-color: #111;
+    --fg-color: #eee;
+    --date-color: #ccc;
     --code-bg: #222;
+    --logo-dark: inline;
+    --logo-light: none;
 }
 :root[theme='toggle'] {
-    --bg-color: #fff;
-    --bg-brightness: 150%;
-    --fg-color: #000;
-    --date-color: #222;
+    --bg-color: #eee;
+    --fg-color: #111;
+    --date-color: #333;
     --code-bg: #ddd;
+    --logo-dark: none;
+    --logo-light: inline;
 }
 * {
     margin: 0;
@@ -23,6 +25,7 @@ html, body {
     color: var(--fg-color);
     font-family: 'Questrial', sans-serif;
     scroll-behavior: smooth;
+    transition: .2s;
 }
 p, h1, h2, h3, h4 {
     padding: 1rem 0;
@@ -48,11 +51,10 @@ a:hover, a:focus, a:active {
 }
 #hero {
     height: 100%;
-    background-image: url("../img/vtn-min-tri.svg");
+    background-image: linear-gradient(var(--bg-color), #0000), url("../img/bg/vtn-min-tri.svg");
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
-    filter: brightness(var(--bg-brightness));
 }
 #hero .container {
     display: flex;
@@ -84,9 +86,10 @@ a:hover, a:focus, a:active {
     min-width: 0;
 }
 .card-thumb {
+    min-height: 12.5vw;
     height: 10rem;
     background: #077;
-    background-image: linear-gradient(#0000, #0008), url("../img/vtn-min-square.svg");
+    background-image: linear-gradient(#0000, #0008), url("../img/bg/vtn-min-square.svg");
     background-position: center;
     background-size: 100%;
     background-repeat: space;
@@ -114,11 +117,19 @@ a:hover, a:focus, a:active {
     height: 90%;
     transition: .2s;
 }
-.card-body {
-    height: 60%;
-}
 .card-body a, #more-projects {
     padding: .5rem 2rem;
+}
+.card-body .ext-link {
+    padding: .25rem;
+    line-height: 2rem;
+    background: none;
+    color: var(--fg-color);
+    border: none;
+}
+.card-body .ext-link img {
+    height: 1.25rem;
+    vertical-align: text-bottom;
 }
 #more-projects {
     display: block;
@@ -131,10 +142,16 @@ a:hover, a:focus, a:active {
 }
 .highlight {
     margin-right: .25rem;
-    padding: .25rem .5rem;
+    padding: .5rem .5rem;
     background: var(--fg-color);
     color: var(--bg-color);
     font-weight: bold;
+}
+.highlight img {
+    height: 1rem;
+}
+.highlight > * {
+    vertical-align: sub;
 }
 .email, footer a {
     padding: 0;
@@ -146,12 +163,31 @@ a:hover, a:focus, a:active {
     background: 0;
     text-decoration: underline;
 }
+#follow-buttons img {
+    height: 100%;
+    margin-right: .5rem;
+}
+.img-light,
+#follow-buttons a:hover .img-dark,
+#follow-buttons a:focus .img-dark {
+    display: var(--logo-light);
+}
+.img-dark,
+#follow-buttons a:hover .img-light,
+#follow-buttons a:focus .img-light {
+    display: var(--logo-dark);
+}
 #follow-buttons a {
     margin: 0 .5rem .5rem 0;
+    height: 3.5rem;
     float: left;
+    position: relative;
+}
+#follow-buttons a > * {
+    vertical-align: sub;
 }
 footer {
-    background-image: linear-gradient(135deg, var(--bg-color) 25%, #0000), url("../img/vtn-min-square.svg");
+    background-image: linear-gradient(var(--bg-color), #0000 400%), url("../img/bg/vtn-min-square.svg");
     background-position: center;
     background-size: cover;
 }
@@ -182,17 +218,19 @@ footer {
 }
 @media screen and (prefers-color-scheme: light) {
     :root {
-        --bg-color: #fff;
-        --bg-brightness: 150%;
-        --fg-color: #000;
-        --date-color: #222;
+        --bg-color: #eee;
+        --fg-color: #111;
+        --date-color: #333;
         --code-bg: #ddd;
+        --logo-dark: none;
+        --logo-light: inline;
     }
     :root[theme='toggle'] {
-        --bg-color: #000;
-        --bg-brightness: 100%;
-        --fg-color: #fff;
-        --date-color: #ddd;
+        --bg-color: #111;
+        --fg-color: #eee;
+        --date-color: #ccc;
         --code-bg: #222;
+        --logo-dark: inline;
+        --logo-light: none;
     }
 }

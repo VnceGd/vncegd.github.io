@@ -12,12 +12,12 @@ nav #logo {
     float: left;
     padding: 0;
     height: 48px;
-    background: #000;
+    background: none;
     border: 0;
     border-radius: 50%;
 }
 nav #logo:hover, nav #logo:focus {
-    background: #033;
+    box-shadow: 0 0 .1rem var(--fg-color);
 }
 nav #theme-btn {
     display: inline-flex;
@@ -58,13 +58,13 @@ nav ul li a {
     padding: 2rem 3.5rem;
     width: 100%;
     background: #033;
-    color: #fff;
+    color: var(--fg-color);
     border: 0;
 }
 nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
     font-weight: bold;
-    background: #fff;
-    color: #000;
+    background: var(--fg-color);
+    color: var(--bg-color);
 }
 nav label {
     display: block;

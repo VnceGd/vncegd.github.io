@@ -3,11 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
     let nav = document.querySelector("nav");
 
     if (document.scrollingElement.scrollTop > 0)
-        nav.style.background = "#000";
+        nav.style.background = "#111";
 
     document.onscroll = function (e) {
         if (e.target.scrollingElement.scrollTop > 0) {
-            nav.style.background = "#000";
+            nav.style.background = "var(--bg-color)";
         } else {
             nav.style.background = "none";
         }
