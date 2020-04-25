@@ -1,7 +1,7 @@
 const toggleBtn = document.querySelector("#theme-btn");
 var timeSinceToggle = 0;
 
-toggleBtn.addEventListener('click', e => {
+toggleBtn.addEventListener('click', () => {
     if (Date.now() - timeSinceToggle < 200) {
         return;
     }
