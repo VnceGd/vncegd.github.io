@@ -57,7 +57,7 @@ nav ul li a {
     display: inline-block;
     padding: 2rem 3.5rem;
     width: 100%;
-    background: #033;
+    background: var(--bg-color);
     color: var(--fg-color);
     border: 0;
 }
