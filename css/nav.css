@@ -20,23 +20,12 @@ nav #logo:hover, nav #logo:focus {
     box-shadow: 0 0 .1rem var(--fg-color);
 }
 nav #theme-btn {
-    display: inline-flex;
-    margin: .5rem;
-    padding: 0;
-    width: 2rem;
-    height: 2rem;
-    background: var(--fg-color);
-    border: .25rem solid var(--fg-color);
-    border-radius: 50%;
-    opacity: .5;
-}
-nav #theme-btn svg {
-    margin: auto;
-    width: 2rem;
-    fill: var(--bg-color);
+    background: none;
+    border: none;
+    outline: none;
+    opacity: .8;
 }
 nav #theme-btn:hover, nav #theme-btn:focus {
-    border-color: var(--bg-color);
     opacity: 1;
 }
 nav ul {
