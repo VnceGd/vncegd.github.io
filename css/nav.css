@@ -27,6 +27,7 @@ nav #theme-btn {
 }
 nav #theme-btn:hover, nav #theme-btn:focus {
     opacity: 1;
+    cursor: pointer;
 }
 nav ul {
     display: none;
