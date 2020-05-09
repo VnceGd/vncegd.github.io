@@ -22,7 +22,7 @@
     padding: .25rem;
 }
 .post {
-    padding: 1rem 0;
+    padding: 1rem 2rem;
     background: var(--bg-color);
 }
 #arrows {
