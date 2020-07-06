@@ -41,7 +41,6 @@ nav ul {
 nav ul li {
     display: block;
     text-align: right;
-    transition: .2s;
 }
 nav ul li a {
     display: inline-block;
@@ -53,7 +52,6 @@ nav ul li a {
 }
 nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
     font-weight: bold;
-    background: var(--fg-color);
     color: var(--bg-color);
 }
 nav label {

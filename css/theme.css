@@ -1,0 +1,35 @@
+:root {
+    --bg-color: #111;
+    --fg-color: #eee;
+    --date-color: #ccc;
+    --code-bg: #222;
+    --logo-dark: inline;
+    --logo-light: none;
+}
+:root[theme='toggle'] {
+    --bg-color: #eee;
+    --fg-color: #111;
+    --date-color: #333;
+    --code-bg: #ddd;
+    --logo-dark: none;
+    --logo-light: inline;
+}
+
+@media screen and (prefers-color-scheme: light) {
+    :root {
+        --bg-color: #eee;
+        --fg-color: #111;
+        --date-color: #333;
+        --code-bg: #ddd;
+        --logo-dark: none;
+        --logo-light: inline;
+    }
+    :root[theme='toggle'] {
+        --bg-color: #111;
+        --fg-color: #eee;
+        --date-color: #ccc;
+        --code-bg: #222;
+        --logo-dark: inline;
+        --logo-light: none;
+    }
+}

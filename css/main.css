@@ -1,20 +1,3 @@
-/* Dark theme default */
-:root {
-    --bg-color: #111;
-    --fg-color: #eee;
-    --date-color: #ccc;
-    --code-bg: #222;
-    --logo-dark: inline;
-    --logo-light: none;
-}
-:root[theme='toggle'] {
-    --bg-color: #eee;
-    --fg-color: #111;
-    --date-color: #333;
-    --code-bg: #ddd;
-    --logo-dark: none;
-    --logo-light: inline;
-}
 * {
     margin: 0;
     box-sizing: border-box;
@@ -36,39 +19,70 @@ code {
     border-radius: .2rem;
 }
 a {
+    display: inline-block;
+    position: relative;
     padding: 1rem;
     background: var(--fg-color);
     color: var(--bg-color);
     border: 1px solid var(--fg-color);
+    transform: perspective(1px) translateZ(0);
     text-decoration: none;
     cursor: pointer;
     transition: .2s;
 }
-a:hover, a:focus, a:active {
-    background: var(--bg-color);
-    color: var(--fg-color);
-    transition: .2s;
-}
+
 #hero {
     height: 100%;
+}
+#hero .container {
+    display: flex;
+    overflow: hidden;
+}
+#hero-content {
+    margin: auto 0;
+    z-index: 2;
+}
+#hero-bg-img {
     background-image: linear-gradient(var(--bg-color), #0000), url("../img/bg/vtn-min-tri.svg");
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
-}
-#hero .container {
-    display: flex;
-}
-#hero-content {
-    margin: auto 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 #hero h1 {
     font-size: 4rem;
+}
+#animated-bg {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    overflow: hidden;
+    z-index: 0;
+}
+#animated-bg i {
+    position: absolute;
+    background: none;
+    border-top: solid #0777;
+    border-left: solid transparent;
+    border-right: solid transparent;
+    z-index: 0;
+
+    animation: animate_bg ease-out infinite running;
 }
 .container {
     width: 100%;
     height: 100%;
     padding: 3rem;
+    position: relative;
     overflow: auto;
 }
 .section-header {
@@ -205,32 +219,5 @@ footer {
 @media(min-width: 1000px) {
     .card-group {
         grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-    html, body {
-        scroll-behavior: auto;
-    }
-    .card-thumb, .card-thumb:hover, .card-thumb:focus, .card-thumb img {
-        transition: none;
-    }
-}
-@media screen and (prefers-color-scheme: light) {
-    :root {
-        --bg-color: #eee;
-        --fg-color: #111;
-        --date-color: #333;
-        --code-bg: #ddd;
-        --logo-dark: none;
-        --logo-light: inline;
-    }
-    :root[theme='toggle'] {
-        --bg-color: #111;
-        --fg-color: #eee;
-        --date-color: #ccc;
-        --code-bg: #222;
-        --logo-dark: inline;
-        --logo-light: none;
     }
 }
