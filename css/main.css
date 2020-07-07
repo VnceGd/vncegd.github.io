@@ -91,6 +91,16 @@ body::-webkit-scrollbar-thumb:active {
 
     animation: animate_bg ease-out infinite running;
 }
+#self-photo {
+    margin: auto;
+    width: 12rem;
+    height: 12rem;
+    background-image: url("../img/icon/vincent.jpg");
+    background-size: cover;
+    background-position: 40%;
+    border-radius: 50%;
+}
+
 .container {
     width: 100%;
     height: 100%;
@@ -227,5 +237,14 @@ footer {
 @media(min-width: 1000px) {
     .card-group {
         grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media(min-width: 1150px) {
+    #about-section {
+        float: left;
+    }
+    #self-photo {
+        margin-left: 4rem;
+        float: left;
     }
 }

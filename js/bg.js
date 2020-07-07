@@ -13,7 +13,7 @@ function generateBackgroundObjects() {
         let y = Math.floor(Math.random() * 100);
 
         object.style.left = x + 'vw';
-        object.style.top = '-' + y + 'vh';
+        object.style.top = -y + 'vh';
 
         object.style.borderWidth = width + 'rem';
         object.style.animationDuration = duration + 's';
