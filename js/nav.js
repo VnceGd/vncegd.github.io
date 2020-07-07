@@ -1,5 +1,14 @@
-// Nav background
+function toggleDropdown(e) {
+    let hamburger = document.getElementById("hamburger");
+
+    if (hamburger.checked && e.code != "Enter")
+        hamburger.checked = false;
+    else if (e.code != "Escape")
+        hamburger.checked = true;
+}
+
 document.addEventListener("DOMContentLoaded", function () {
+    // Nav background
     let nav = document.querySelector("nav");
 
     if (document.scrollingElement.scrollTop > 0)
@@ -12,37 +21,29 @@ document.addEventListener("DOMContentLoaded", function () {
             nav.style.background = "none";
         }
     };
-});
 
-// Hamburger menu
-const hamburgerLabel = document.getElementById("hamburger-label");
-const navButtons = document.getElementsByClassName("nav-btn");
+    // Hamburger menu
+    let hamburgerLabel = document.getElementById("hamburger-label");
+    let navButtons = document.getElementsByClassName("nav-btn");
 
-document.onkeydown = function(e) {
-    if (e.code == "Escape")
-        toggleDropdown(e);
-}
-hamburgerLabel.onkeydown = function(e) {
-    if (e.code == "Enter")
-        toggleDropdown(e);
-}
-for(let n = 0; n < navButtons.length; n++) {
-    let btn = navButtons[n];
-
-    btn.addEventListener('keydown', (e) => {
-        if (e.code == "Escape" || e.code == "Enter")
+    document.onkeydown = function(e) {
+        if (e.code == "Escape")
             toggleDropdown(e);
-    });
-    btn.addEventListener('click', (e) => {
-        toggleDropdown(e)
-    });
-}
+    }
+    hamburgerLabel.onkeydown = function(e) {
+        if (e.code == "Enter")
+            toggleDropdown(e);
+    }
+    
+    for(let n = 0; n < navButtons.length; n++) {
+        let btn = navButtons[n];
 
-function toggleDropdown(e) {
-    let hamburger = document.getElementById("hamburger");
-
-    if (hamburger.checked && e.code != "Enter")
-        hamburger.checked = false;
-    else if (e.code != "Escape")
-        hamburger.checked = true;
-}
+        btn.addEventListener('keydown', (e) => {
+            if (e.code == "Escape" || e.code == "Enter")
+                toggleDropdown(e);
+        });
+        btn.addEventListener('click', (e) => {
+            toggleDropdown(e)
+        });
+    }
+});
