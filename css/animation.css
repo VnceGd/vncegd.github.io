@@ -48,6 +48,7 @@ a:hover, a:focus, a:active {
 }
 
 nav #logo:before {
+    background: var(--brand-color);
     transform-origin: 50%;
     border-radius: 50%;
     transform: scale(0);

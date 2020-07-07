@@ -31,6 +31,19 @@ a {
     transition: .2s;
 }
 
+body::-webkit-scrollbar {
+    width: .5rem;
+}
+body::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+body::-webkit-scrollbar-thumb {
+    background: var(--brand-color);
+}
+body::-webkit-scrollbar-thumb:active {
+    background: var(--fg-color);
+}
+
 #hero {
     height: 100%;
 }
@@ -206,14 +219,9 @@ footer {
     background-size: cover;
 }
 
-@media(min-width: 600px) {
-    .card-group {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 @media(min-width: 768px) {
     .card-group {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 @media(min-width: 1000px) {

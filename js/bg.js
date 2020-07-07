@@ -9,11 +9,11 @@ function generateBackgroundObjects() {
         let object = document.createElement('i');
         let width = Math.random() * MAX_WIDTH;
         let duration = Math.random() * (MAX_DURATION - MIN_DURATION) + MIN_DURATION;
-        let x = Math.floor(Math.random() * window.innerWidth);
-        let y = Math.floor(Math.random() * window.innerHeight - window.innerHeight);
+        let x = Math.floor(Math.random() * 100);
+        let y = Math.floor(Math.random() * 100);
 
-        object.style.left = x + 'px';
-        object.style.top = y + 'px';
+        object.style.left = x + 'vw';
+        object.style.top = '-' + y + 'vh';
 
         object.style.borderWidth = width + 'rem';
         object.style.animationDuration = duration + 's';
