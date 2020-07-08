@@ -277,13 +277,14 @@ footer {
     background-position: center;
     background-size: cover;
 }
-footer a {
+footer a, form a {
     padding: 0;
     background: 0;
     color: var(--fg-color);
     border: 0;
+    font-weight: bold;
 }
-footer a:hover {
+footer a:hover, form a:hover {
     background: 0;
     text-decoration: underline;
 }
