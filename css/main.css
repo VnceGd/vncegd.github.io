@@ -123,8 +123,7 @@ body::-webkit-scrollbar-thumb:active {
     min-width: 0;
 }
 .card-thumb {
-    min-height: 12.5vw;
-    height: 10rem;
+    height: 48vw;
     background: #077;
     background-image: linear-gradient(#0000, #0008), url("../img/bg/vtn-min-square.svg");
     background-position: center;
@@ -233,18 +232,28 @@ footer {
     .card-group {
         grid-template-columns: repeat(2, 1fr);
     }
-}
-@media(min-width: 1000px) {
-    .card-group {
-        grid-template-columns: repeat(4, 1fr);
+    .card-thumb {
+        height: 24vw;
     }
 }
-@media(min-width: 1150px) {
+@media(min-width: 1280px) {
     #about-section {
         float: left;
     }
     #self-photo {
         margin-left: 4rem;
         float: left;
+    }
+
+    .card-group {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .card-thumb {
+        height: 12vw;
+    }
+}
+@media(min-width: 1920px) {
+    html {
+        font-size: 1vw;
     }
 }

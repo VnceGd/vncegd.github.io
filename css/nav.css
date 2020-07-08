@@ -6,12 +6,12 @@ nav {
     z-index: 99;
 }
 nav img {
-    height: 48px;
+    height: 3rem;
 }
 nav #logo {
     float: left;
     padding: 0;
-    height: 48px;
+    height: 3rem;
     background: none;
     border: 0;
     border-radius: 50%;
@@ -57,7 +57,7 @@ nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
 nav label {
     display: block;
     float: right;
-    height: 48px;
+    height: 3rem;
     cursor: pointer;
 }
 #hamburger {
