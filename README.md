@@ -13,6 +13,9 @@ The following resources were helpful in the creation of the website:
 * [CSS-Tricks](https://css-tricks.com/)
 * [Online Tutorials (YouTube channel)](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog)
 * [Hover.css](http://ianlunn.github.io/Hover/)
+* [web.dev](https://web.dev/)
+* [Mozilla MDN web docs](https://developer.mozilla.org/)
+* [Formspree](https://formspree.io/)
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
