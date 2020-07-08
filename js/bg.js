@@ -22,4 +22,4 @@ function generateBackgroundObjects() {
     }
 }
 
-generateBackgroundObjects();
+document.addEventListener("DOMContentLoaded", generateBackgroundObjects);
