@@ -1,13 +1,15 @@
-#hero-content, #hero-bg-img {
-    animation: intro_animation .3s ease-out;
+#hero-bg-img {
+    animation: intro_animation 1s ease;
 }
 
 @keyframes intro_animation {
     0% {
         opacity: 0;
+        top: -25vh;
     }
     100% {
         opacity: 1;
+        top: 0vh;
     }
 }
 

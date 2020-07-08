@@ -114,13 +114,12 @@ body::-webkit-scrollbar-thumb:active {
 }
 .card-group {
     display: grid;
-    margin-bottom: 2rem;
-    grid-gap: 2rem 1rem;
+    margin-bottom: 2vw;
+    grid-gap: 2vw;
     grid-template-columns: 1fr;
 }
 .card {
     float: left;
-    min-width: 0;
 }
 .card-thumb {
     height: 48vw;
@@ -148,6 +147,7 @@ body::-webkit-scrollbar-thumb:active {
 .card-thumb .card-bg {
     visibility: hidden;
     width: 100%;
+    min-height: 100%;
     position: absolute;
     transform: translateY(-100%);
     transition: .2s;
