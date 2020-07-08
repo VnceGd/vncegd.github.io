@@ -127,13 +127,9 @@ body::-webkit-scrollbar-thumb:active {
     background: #077;
     background-image: linear-gradient(#0000, #0008), url("../img/bg/vtn-min-square.svg");
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: space;
     overflow: hidden;
-    transition: background-size .2s;
-}
-.card-thumb:hover, .card-thumb:focus {
-    background-size: 110%;
     transition: background-size .2s;
 }
 .card-thumb a {
@@ -144,13 +140,25 @@ body::-webkit-scrollbar-thumb:active {
     border: 0;
     justify-content: center;
 }
-.card-thumb a:hover > img, .card-thumb a:focus > img {
-    transform: scale(1.1);
-    filter: drop-shadow(0 0 1rem #000);
-}
-.card-thumb img {
+.card-thumb .card-logo {
     margin-top: 2.5%;
     height: 90%;
+    transition: .2s;
+}
+.card-thumb .card-bg {
+    visibility: hidden;
+    width: 100%;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: .2s;
+}
+.card-thumb a:hover .card-logo, .card-thumb a:focus .card-logo {
+    transform: translateY(100%);
+    transition: .2s;
+}
+.card-thumb a:hover > .card-bg, .card-thumb a:focus > .card-bg {
+    visibility: visible;
+    transform: translateY(0);
     transition: .2s;
 }
 .card-body a, #more-projects {
