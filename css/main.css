@@ -174,14 +174,22 @@ body::-webkit-scrollbar-thumb:active {
     height: 1.25rem;
     vertical-align: text-bottom;
 }
-#more-projects {
-    display: block;
-    text-align: center;
-}
 .date {
     color: var(--date-color);
     font-size: .9rem;
     transition: color .2s;
+}
+#more-projects {
+    display: block;
+    text-align: center;
+}
+
+.contact-buttons, .contact-form {
+    width: 100%;
+    float: left;
+}
+.contact-buttons {
+    margin-bottom: 4rem;
 }
 .highlight {
     margin-right: .25rem;
@@ -195,16 +203,6 @@ body::-webkit-scrollbar-thumb:active {
 }
 .highlight > * {
     vertical-align: sub;
-}
-.email, footer a {
-    padding: 0;
-    background: 0;
-    color: var(--fg-color);
-    border: 0;
-}
-.email:hover, footer a:hover {
-    background: 0;
-    text-decoration: underline;
 }
 #follow-buttons img {
     height: 100%;
@@ -229,10 +227,68 @@ body::-webkit-scrollbar-thumb:active {
 #follow-buttons a > * {
     vertical-align: sub;
 }
+form {
+    width: 100%;
+}
+form input, textarea {
+    font-family: 'Questrial', sans-serif;
+}
+form label, form input[type="text"], textarea {
+    margin: 1rem 0;
+}
+form input[type="text"], textarea {
+    padding: .5rem;
+    width: 100%;
+    color: var(--bg-color);
+    background: var(--date-color);
+    font-size: .875rem;
+    border: 0;
+    border: 1px solid var(--fg-color);
+    transition: .2s;
+}
+form input[type="text"]:focus, textarea:focus {
+    background: var(--fg-color);
+    border-color: var(--brand-color);
+    box-shadow: 0 .3rem 0 0 var(--brand-color);
+    transition: .2s;
+}
+textarea {
+    height: 10rem;
+    resize: vertical;
+}
+form input[type="submit"] {
+    border: 0;
+    padding: .5rem 2rem;
+    color: #eee;
+    background: var(--brand-color);
+    font-size: .875rem;
+    font-weight: bold;
+    transition: .2s;
+}
+form input[type="submit"]:hover {
+    color: var(--bg-color);
+    background: var(--fg-color);
+    cursor: pointer;
+    transition: .2s;
+}
+
 footer {
     background-image: linear-gradient(var(--bg-color), #0000 400%), url("../img/bg/vtn-min-square.svg");
     background-position: center;
     background-size: cover;
+}
+footer a {
+    padding: 0;
+    background: 0;
+    color: var(--fg-color);
+    border: 0;
+}
+footer a:hover {
+    background: 0;
+    text-decoration: underline;
+}
+footer p {
+    padding: 0;
 }
 
 @media(min-width: 768px) {
@@ -241,6 +297,20 @@ footer {
     }
     .card-thumb {
         height: 24vw;
+    }
+
+    .contact-buttons, .contact-form {
+        width: 48%;
+    }
+    .contact-form {
+        float: right;
+    }
+    .contact-buttons {
+        /* margin-bottom: 4rem; */
+        margin: 0;
+    }
+    form input[type="submit"] {
+        float: right;
     }
 }
 @media(min-width: 1280px) {

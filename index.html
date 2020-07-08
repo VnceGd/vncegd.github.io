@@ -141,11 +141,12 @@
         <section id="contact">
             <div class="container">
                 <h1 class="section-header">Contact</h1>
-                <h3>Message</h3>
+                <div class="contact-buttons">
+                    <h3>Get in Touch</h3>
                     <p><a class="highlight" href="mailto:vtn28@drexel.edu"><img src="img/icon/email.svg" title="Email"> Email</a> vtn28@drexel.edu</p>
                     <p><a class="highlight" href="tel:+01-484-557-2309"><img src="img/icon/phone.svg" title="Phone"> Phone</a> +1 484 557 2309</p>
                     <p><a class="highlight" href="https://discord.gg/daZUt2d"><img src="img/logo/discord-color.png" title="Discord"> Discord</a> ZevinLevin#4019</p>
-                <h3>Follow</h3>
+                    <h3>Follow</h3>
                     <p id="follow-buttons">
                         <a href="https://github.com/vncegd" target="_blank" rel="noopener">
                             <img class="img-dark" src="img/logo/git-black.png" title="Github">
@@ -169,6 +170,17 @@
                         <a href="https://osu.ppy.sh/users/4890690" target="_blank" rel="noopener">
                             <img src="img/logo/osu!.png" title="osu!"> osu!</a>
                     </p>
+                </div>
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form action="https://formspree.io/mvowwykl" target="_blank" method="POST">
+                        <label for="form-name-input">Name</label> <br>
+                        <input id="form-name-input" type="text" name="Name" required> <br>
+                        <label for="form-message-input">Message</label> <br>
+                        <textarea id="form-message-input" type="text" name="Message" placeholder="Say hello!" required></textarea>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
             </div>
         </section>
         <footer>
