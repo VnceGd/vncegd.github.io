@@ -20,10 +20,13 @@
 @keyframes animate_bg {
     0% {
         transform: translateY(0);
-        opacity: 1;
+        opacity: 0;
+    }
+    25% {
+        opacity: .5;
     }
     100% {
-        transform: translateY(200vh);
+        transform: translateY(100vh);
         opacity: 0;
     }
 }
@@ -69,6 +72,10 @@ nav a:before {
     background: var(--fg-color);
 }
 
+#cta-contact:before {
+    background: var(--fg-color);
+}
+
 .card-thumb a:before {
     display: none;
 }
@@ -95,5 +102,12 @@ nav a:before {
 
     nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
         background: var(--fg-color);
+    }
+
+    #hero-bg-img {
+        animation: none;
+    }
+    #animated-bg i {
+        animation: none;
     }
 }
