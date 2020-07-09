@@ -271,6 +271,12 @@ form input[type="submit"]:hover {
     cursor: pointer;
     transition: .2s;
 }
+#formspree-credit {
+    margin: 0;
+    padding: .5rem 0;
+    font-size: .875rem;
+    float: right;
+}
 
 footer {
     background-image: linear-gradient(var(--bg-color), #0000 400%), url("../img/bg/vtn-min-square.svg");
@@ -307,11 +313,7 @@ footer p {
         float: right;
     }
     .contact-buttons {
-        /* margin-bottom: 4rem; */
         margin: 0;
-    }
-    form input[type="submit"] {
-        float: right;
     }
 }
 @media(min-width: 1280px) {
