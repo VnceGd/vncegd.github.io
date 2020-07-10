@@ -84,10 +84,6 @@ nav a:before {
     html, body {
         scroll-behavior: auto;
     }
-    .card-thumb, .card-thumb:hover, .card-thumb:focus, .card-thumb img {
-        transition: none;
-    }
-
     a {
         transition: 0s;
     }
@@ -100,6 +96,9 @@ nav a:before {
         transition: 0s;
     }
 
+    nav ul li a {
+        transition: none;
+    }
     nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
         background: var(--fg-color);
     }
@@ -109,5 +108,9 @@ nav a:before {
     }
     #animated-bg i {
         animation: none;
+    }
+
+    .card-thumb, .card-thumb:hover, .card-thumb:focus, .card-thumb img {
+        transition: none;
     }
 }

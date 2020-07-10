@@ -14,6 +14,7 @@ The following resources were helpful in the creation of the website:
 * [Online Tutorials (YouTube channel)](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog)
 * [Hover.css](http://ianlunn.github.io/Hover/)
 * [web.dev](https://web.dev/)
+* [Google Fonts](https://fonts.google.com/)
 * [Mozilla MDN web docs](https://developer.mozilla.org/)
 * [Formspree](https://formspree.io/)
 
