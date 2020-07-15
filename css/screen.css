@@ -13,6 +13,9 @@
         font-size: 14px;
     }
 
+    nav {
+        padding: 1rem 4rem;
+    }
     nav label {
         display: none;
     }
@@ -25,9 +28,10 @@
     }
     nav ul li {
         display: inline-block;
+        text-align: center;
     }
     nav ul li a {
-        padding: 1rem;
+        padding: 1rem 1.5rem;
         background: 0;
     }
     nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
@@ -44,14 +48,26 @@
     .card-thumb {
         height: 24vw;
     }
+    #more-projects {
+        display: inline-block;
+    }
 
-    .contact-buttons, .contact-form {
+    #about-section {
+        max-width: 55vw;
+        float: left;
+    }
+    #self-photo {
+        margin-left: 4rem;
+        float: left;
+    }
+
+    #contact-buttons, .contact-form {
         width: 48%;
     }
     .contact-form {
         float: right;
     }
-    .contact-buttons {
+    #contact-buttons {
         margin: 0;
     }
 }
@@ -61,13 +77,8 @@
     }
 
     #about-section {
-        float: left;
+        max-width: max-content;
     }
-    #self-photo {
-        margin-left: 4rem;
-        float: left;
-    }
-
     .card-group {
         grid-template-columns: repeat(4, 1fr);
     }
