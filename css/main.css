@@ -19,6 +19,9 @@ p, h1, h2, h3, h4 {
 h1, a {
     font-family: 'Oxygen', sans-serif;
 }
+h3 {
+    letter-spacing: .2rem;
+}
 code {
     padding: .1rem .2rem;
     background: var(--code-bg);
@@ -92,26 +95,15 @@ body::-webkit-scrollbar-thumb:active {
 #cta-contact:hover, #cta-contact:focus {
     color: var(--bg-color);
 }
-#animated-bg {
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    align-items: center;
-    overflow: hidden;
-    z-index: 0;
-}
 #animated-bg i {
     position: absolute;
-    background: none;
     border-top: solid #0777;
     border-left: solid transparent;
     border-right: solid transparent;
-    z-index: 0;
-
     animation: animate_bg ease-out infinite running;
+}
+#about {
+    background: var(--code-bg);
 }
 #self-photo {
     margin: auto;
@@ -158,6 +150,9 @@ body::-webkit-scrollbar-thumb:active {
 .card {
     float: left;
 }
+.card h3 {
+    padding-bottom: 0;
+}
 .card-thumb {
     height: 40vw;
     background: #077;
@@ -197,9 +192,6 @@ body::-webkit-scrollbar-thumb:active {
     transform: translateY(0);
     transition: .2s;
 }
-h3 {
-    letter-spacing: .2rem;
-}
 .card-body .ext-link {
     padding: .25rem;
     line-height: 2rem;
@@ -210,6 +202,9 @@ h3 {
 .card-body .ext-link img {
     height: 1.25rem;
     vertical-align: text-bottom;
+}
+.card-body p {
+    padding-top: 1.5rem;
 }
 .date {
     color: var(--date-color);
@@ -228,24 +223,27 @@ h3 {
     float: left;
 }
 #contact-buttons {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 .highlight {
-    margin-right: .25rem;
+    margin-right: 1rem;
     padding: .5rem;
     background: var(--fg-color);
     color: var(--bg-color);
     font-weight: bold;
 }
 .highlight img {
+    margin-right: .25rem;
     height: 1rem;
+    vertical-align: middle;
 }
-.highlight > * {
-    vertical-align: sub;
+#follow-buttons {
+    padding-top: 2rem;
 }
 #follow-buttons img {
     height: 100%;
     margin-right: .5rem;
+    vertical-align: sub;
 }
 .img-light,
 #follow-buttons a:hover .img-dark,
@@ -258,13 +256,11 @@ h3 {
     display: var(--logo-dark);
 }
 #follow-buttons a {
-    margin: 0 .5rem .5rem 0;
+    margin: 0 1rem 1rem 0;
     height: 3.5rem;
     float: left;
     position: relative;
-}
-#follow-buttons a > * {
-    vertical-align: sub;
+    font-weight: bold;
 }
 form {
     width: 100%;
@@ -332,6 +328,9 @@ footer a, form a {
 footer a:hover, form a:hover {
     background: 0;
     text-decoration: underline;
+}
+footer img {
+    height: 2rem;
 }
 footer p {
     padding: 0;

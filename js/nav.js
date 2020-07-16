@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Hamburger menu
     let hamburgerLabel = document.getElementById("hamburger-label");
-    let navButtons = document.getElementsByClassName("nav-btn");
+    let navButtons = document.getElementById("nav-btns").children;
 
     document.onkeydown = function(e) {
         if (e.code == "Escape")
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 toggleDropdown(e);
         });
         btn.addEventListener('click', (e) => {
-            toggleDropdown(e)
+            toggleDropdown(e);
         });
     }
 });
