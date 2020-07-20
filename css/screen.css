@@ -43,7 +43,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
     .card-thumb {
-        height: 24vw;
+        height: 23vw;
     }
     #more-projects {
         display: inline-block;
@@ -80,7 +80,7 @@
         grid-template-columns: repeat(4, 1fr);
     }
     .card-thumb {
-        height: 12vw;
+        height: 11vw;
     }
 }
 @media(min-width: 1920px) {

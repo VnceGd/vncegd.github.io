@@ -154,7 +154,7 @@ body::-webkit-scrollbar-thumb:active {
     padding-bottom: 0;
 }
 .card-thumb {
-    height: 40vw;
+    height: 42vw;
     background: #077;
     background-image: linear-gradient(#0000, #0008), url("../img/bg/vtn-min-square.svg");
     background-position: center;
@@ -242,7 +242,7 @@ body::-webkit-scrollbar-thumb:active {
 }
 #follow-buttons img {
     height: 100%;
-    margin-right: .5rem;
+    margin-right: .75rem;
     vertical-align: sub;
 }
 .img-light,
@@ -330,7 +330,7 @@ footer a:hover, form a:hover {
     text-decoration: underline;
 }
 footer img {
-    height: 2rem;
+    height: 1.5rem;
 }
 footer p {
     padding: 0;
