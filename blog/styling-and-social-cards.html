@@ -1,97 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
+<head>
+<meta charset="utf-8">
 
-        <title>Vincent Nguyen | Blog | Styling and Social Cards </title>
-        <meta property="og:title" content="Vincent Nguyen | Blog | Styling and Social Cards">
+<title>Vincent Nguyen Blog - Styling and Social Cards</title>
+<meta property="og:title" content="Styling and Social Cards">
 
-        <meta name="description" content="Vincent Nguyen Blog - Styling and Social Cards">
-        <meta property="og:description" content="Vincent Nguyen Blog - Styling and Social Cards">
-        <meta property="og:url" content="https://vncegd.github.io/blog/styling-and-social-cards.html">
+<meta name="keywords" content="Personal Blog">
+<meta name="author" content="Vincent Nguyen">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <meta name="keywords" content="Personal, Website, Blog, Filter, Gradient">
-        <meta name="author" content="Vincent Nguyen">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<base href="..">
 
-        <meta property=”og:type” content="website">
-        <meta property="og:image" content="https://vncegd.github.io/img/vtn-card.jpg">
-        <meta property="og:image:alt" content="VTN Logo">
-        <meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/logo/vtn-logo.svg">
 
-        <base href="..">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/screen.css">
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/animation.css">
+<link rel="stylesheet" href="css/blog.css">
 
-        <link rel="icon" href="img/logo/vtn-logo.svg">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen&display=swap">
 
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/nav.css">
-        <link rel="stylesheet" href="css/theme.css">
-        <link rel="stylesheet" href="css/blog.css">
-
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial&display=swap">
-    </head>
-    <body>
-        <nav>
-            <a id="logo" href=""><img src="img/logo/vtn-logo.svg" alt="Logo"></a>
-            <button id="theme-btn" aria-label="Toggle theme button">
-                <img class="img-light" src="img/icon/theme-light.svg" title="Toggle theme"/>
-                <img class="img-dark" src="img/icon/theme-dark.svg" title="Toggle theme"/>
-            </button>
-            <label id="hamburger-label" for="hamburger" tabindex="0"><img src="img/icon/hamburger.svg" alt="Hamburger menu"></label>
-            <input type="checkbox" id="hamburger">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <section id="blog">
-            <div class="container">
-                <h1>Styling and Social Cards</h1>
-                <h2>08 January 2020</h2>
-                <div class="post">
-                    <p>
-                        These past few days I've been making some style changes to my website mostly affecting the background images, and have also been looking into social card previews that are created when people share my website.
-                    </p>
-                    <p>
-                        I found out about <code>linear-gradient()</code> recently, specifically using it alongside an image url, and have been messing around with applying it to a bunch of elements on my website.
-                        It can create some cool-looking effects and also helps to increase contrast between the foreground and background in a subtle way.
-                        I wasn't a huge fan of gradients before, but it looks like their effectiveness depends on the use case.
-                    </p>
-                    <p>
-                        I also recently came across <code>filter: drop-shadow()</code> which I applied to the logos on project and blog cards.
-                        It makes the logos pop even more when used in addition to the soft background gradient.
-                        It's basically used instead of <code>box-shadow</code> for non-rectangular shapes.
-                    </p>
-                    <p>
-                        I've also been experimenting with <code>og</code> and <code>twitter</code> meta properties to make the website display as a card when shared on social networks such as LinkedIn, Facebook, and Twitter.
-                        I don't expect anyone to be sharing this since I don't have share buttons, but the <code>meta</code> tags in the header can act as a template which anyone may use.
-                    </p>
-                    <p>
-                        One thing I might need to look into is a way for me to only need to change the title of a blog post in a single place (or set up a better template).
-                        Currently, I've been needing to adjust <code>title</code>, <code>description</code>, <code>url</code>, and the name of the html file itself as well as any links to it, which has been time consuming since I'm constantly thinking of ways to reword the title of the post.
-                        I also haven't been integrating images into my blog posts yet, and it might be useful to research a modular way to position images such that it could allow for a variable number of images on one line or aligned in a certain way, regardless of width or height, while also being responsive.
-                    </p>
-                    <p>
-                        Anyways, I'm writing this at 1am after a long day and would be better off getting some rest.
-                        It's possible that I will edit or delete posts from my published site, but if for some reason you want to dig into my GitHub commits to see previous versions, feel free.
-                        Even if no one reads my blog, it'll still exist somewhere on the Internet.
-                    </p>
-                </div>
-                <div id="arrows" class="container">
-                    <a href="blog/hello-2020.html"><img id="left-arrow" src="img/bg/vtn-min-tri.svg" alt="(Prev)"> Hello, 2020</a>
-                    <a href="blog/drexel-winter-2020-week-1.html">Drexel Winter 2020 Week 1 <img id="right-arrow" src="img/bg/vtn-min-tri.svg" alt="(Next)"></a>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <div class="container">
-                <p>Vincent Nguyen 2020. Licensed under <a href="LICENSE"><strong>MIT License</strong></a>.</p>
-            </div>
-        </footer>
-        <script src="js/nav.js"></script>
-        <script src="js/theme.js"></script>
-    </body>
+<script src="js/nav.js" defer></script>
+<script src="js/theme.js" defer></script>
+</head>
+<body>
+<nav>
+<a id="logo" href="#"><img src="img/logo/vtn-logo.svg" title="VTN Logo"></a>
+<button id="theme-btn" aria-label="Toggle theme button">
+<img class="img-dark" src="img/icon/theme-light.svg" title="Toggle theme"/>
+<img class="img-light" src="img/icon/theme-dark.svg" title="Toggle theme"/>
+</button>
+<label id="hamburger-label" for="hamburger" tabindex="0"><img src="img/icon/hamburger.svg" alt="Hamburger menu"></label>
+<input type="checkbox" id="hamburger">
+<ul id="nav-btns">
+<li><a href="#hero">Home</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<section class="blog">
+<div class="container">
+<h1>Styling and Social Cards</h1>
+<h2>2020-01-08</h2>
+<div class="post">
+<p>These past few days I've been making some style changes to my website mostly affecting the background images, and have also been looking into social card previews that are created when people share my website.</p>
+<p>I found out about <code>linear-gradient()</code> recently, specifically using it alongside an image url, and have been messing around with applying it to a bunch of elements on my website.
+It can create some cool-looking effects and also helps to increase contrast between the foreground and background in a subtle way.
+I wasn't a huge fan of gradients before, but it looks like their effectiveness depends on the use case.</p>
+<p>I also recently came across <code>filter: drop-shadow()</code> which I applied to the logos on project and blog cards.
+It makes the logos pop even more when used in addition to the soft background gradient.
+It's basically used instead of <code>box-shadow</code> for non-rectangular shapes.</p>
+<p>I've also been experimenting with <code>og</code> and <code>twitter</code> meta properties to make the website display as a card when shared on social networks such as LinkedIn, Facebook, and Twitter.
+I don't expect anyone to be sharing this since I don't have share buttons, but the <code>meta</code> tags in the header can act as a template which anyone may use.</p>
+<p>One thing I might need to look into is a way for me to only need to change the title of a blog post in a single place (or set up a better template).
+Currently, I've been needing to adjust <code>title</code>, <code>description</code>, <code>url</code>, and the name of the html file itself as well as any links to it, which has been time consuming since I'm constantly thinking of ways to reword the title of the post.
+I also haven't been integrating images into my blog posts yet, and it might be useful to research a modular way to position images such that it could allow for a variable number of images on one line or aligned in a certain way, regardless of width or height, while also being responsive.</p>
+<p>Anyways, I'm writing this at 1am after a long day and would be better off getting some rest.
+It's possible that I will edit or delete posts from my published site, but if for some reason you want to dig into my GitHub commits to see previous versions, feel free.
+Even if no one reads my blog, it'll still exist somewhere on the Internet.</p>
+<hr />
+<p>Previous post: <a href="blog/hello-2020.html">Hello, 2020</a></p>
+<p>Next post: <a href="blog/drexel-winter-2020-week-1.html">Drexel Winter 2020 Week 1</a></p>
+</div>
+</div>
+</section>
+<footer>
+<div class="container">
+Copyright (c) Vincent Nguyen 2020 <a href="LICENSE"><strong>MIT License</strong></a>
+</div>
+</footer>
+</body>
 </html>

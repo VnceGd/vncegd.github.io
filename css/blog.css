@@ -1,54 +1,39 @@
-#blog {
-    min-height: 100%;
+h1, h2 {
+    color: var(--fg-color);
+}
+h1 {
+    margin-top: 2rem;
+    font-size: 4rem;
+}
+h4 {
+    padding-bottom: 0;
+}
+
+hr {
+    margin: 1rem 0 0.5rem 0;
+}
+
+.blog {
+    min-height: 100vh;
     background: linear-gradient(var(--bg-color), #0000 200%), url("../img/bg/vtn-min-tri.svg");
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
-#blog h1 {
-    margin-top: 2rem;
-    font-size: 4rem;
+.container > h1, .container > h2 {
+    text-align: center;
 }
-#blog h1, #blog h2 {
-    color: var(--fg-color);
-}
-#blog h3 {
-    font-size: 1.3rem;
-}
-#blog p, #blog ul {
-    font-size: 1.25rem;
-}
-#blog ul li {
-    padding: .25rem;
-}
+
 .post {
+    max-width: 100ch;
+    margin: auto;
     padding: 1rem 2rem;
     background: var(--bg-color);
 }
-#arrows {
-    text-align: center;
+.post a {
+    margin-left: .25rem;
+    padding: .25rem .5rem;
 }
-#arrows a {
-    display: block;
-}
-#arrows a:nth-child(2) {
-    margin-top: 1rem;
-}
-#left-arrow, #right-arrow {
-    width: 1rem;
-}
-#left-arrow {
-    transform: rotate(90deg);
-}
-#right-arrow {
-    transform: rotate(-90deg);
-}
-
-@media(min-width: 600px) {
-    #arrows a {
-        display: initial;
-    }
-    #arrows a:nth-child(2) {
-        margin-top: 0;
-    }
+.post ul li {
+    padding: .25rem;
 }

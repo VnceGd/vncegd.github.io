@@ -23,7 +23,6 @@ h3 {
     letter-spacing: .2rem;
 }
 code {
-    padding: .1rem .2rem;
     background: var(--code-bg);
     border-radius: .2rem;
 }
