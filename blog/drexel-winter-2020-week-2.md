@@ -18,3 +18,5 @@ Until next time.
 ---
 
 Previous post: [Drexel Winter 2020 Week 1](blog/drexel-winter-2020-week-1)
+
+Next post: [Bringing Blogging Back](blog/bringing-blogging-back)
