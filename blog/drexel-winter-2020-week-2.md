@@ -17,4 +17,4 @@ Until next time.
 
 ---
 
-Previous post: [Drexel Winter 2020 Week 1](blog/drexel-winter-2020-week-1.html)
+Previous post: [Drexel Winter 2020 Week 1](blog/drexel-winter-2020-week-1)

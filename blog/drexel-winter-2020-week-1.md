@@ -58,6 +58,6 @@ Worked on the second assignment while the lecture went over material for the fir
 
 ---
 
-Previous post: [Styling and Social Cards](blog/styling-and-social-cards.html)
+Previous post: [Styling and Social Cards](blog/styling-and-social-cards)
 
-Next post: [Drexel Winter 2020 Week 2](blog/drexel-winter-2020-week-2.html)
+Next post: [Drexel Winter 2020 Week 2](blog/drexel-winter-2020-week-2)

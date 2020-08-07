@@ -24,4 +24,4 @@ Thanks for reading.
 
 ---
 
-Next post: [Styling and Social Cards](blog/styling-and-social-cards.html)
+Next post: [Styling and Social Cards](blog/styling-and-social-cards)
