@@ -37,7 +37,7 @@ for blog in blogs:
         md = ''.join(infile)
         infile.close()
 
-    info = yaml.load(ym, yaml.SafeLoader)
+    info = yaml.safe_load(ym)
 
     # Parse content and convert to html
     content = markdown.markdown(md)
