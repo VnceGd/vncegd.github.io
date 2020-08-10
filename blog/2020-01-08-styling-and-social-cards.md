@@ -26,7 +26,3 @@ It's possible that I will edit or delete posts from my published site, but if fo
 Even if no one reads my blog, it'll still exist somewhere on the Internet.
 
 ---
-
-Previous post: [Hello, 2020](blog/hello-2020)
-
-Next post: [Drexel Winter 2020 Week 1](blog/drexel-winter-2020-week-1)

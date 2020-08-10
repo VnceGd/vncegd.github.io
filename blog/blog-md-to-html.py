@@ -6,6 +6,7 @@ import markdown
 import pystache
 
 # Put markdown files in current directory into blogs array
+# Assume posts follow the naming format: yyyy-mm-dd-title.md
 blogs = []
 cwd = os.getcwd()
 for files in os.listdir(cwd):
@@ -19,7 +20,7 @@ with open('template.html') as infile:
     infile.close()
 
 # For each blog, parse the yaml header and rest of content, then write to an html file
-for blog in blogs:
+for index, blog in enumerate(blogs):
     # Parse yaml header
     with open(blog) as infile:
         for s in infile:
@@ -42,6 +43,18 @@ for blog in blogs:
     # Parse content and convert to html
     content = markdown.markdown(md)
     info['content'] = content
+
+    if index < len(blogs) - 1:
+        info['next-post'] = 'blog/' + blogs[index + 1][:-3] + '.html'
+    else:
+        info['next-post'] = '#'
+        info['next-disabled'] = 'disabled'
+    if index > 0:
+        info['prev-post'] = 'blog/' + blogs[index - 1][:-3] + '.html'
+    else:
+        info['prev-post'] = '#'
+        info['prev-disabled'] = 'disabled'
+
     html = pystache.render(template, info)
 
     # Remove '.md' from blog filename

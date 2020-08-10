@@ -10,7 +10,8 @@ h4 {
 }
 
 hr {
-    margin: 1rem 0 0.5rem;
+    margin: 1rem 0;
+    border-color: var(--code-bg);
 }
 
 .blog {
@@ -44,4 +45,19 @@ hr {
 }
 .post ul li {
     padding: .25rem;
+}
+.prev-next-links {
+    padding: .5rem 0;
+    display: flex;
+    justify-content: center;
+}
+.prev-next-links a {
+    padding: 0 1rem;
+    width: 20ch;
+}
+.prev-next-links a:first-child {
+    text-align: right;
+}
+.disabled {
+    visibility: hidden;
 }

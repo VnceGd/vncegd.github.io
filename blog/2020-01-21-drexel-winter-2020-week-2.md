@@ -16,7 +16,3 @@ It's probably a better idea to have more of a presence on more mainstream platfo
 Until next time.
 
 ---
-
-Previous post: [Drexel Winter 2020 Week 1](blog/drexel-winter-2020-week-1)
-
-Next post: [Bringing Blogging Back](blog/bringing-blogging-back)

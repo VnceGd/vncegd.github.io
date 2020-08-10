@@ -18,5 +18,3 @@ I definitely could have switched to posting on a platform like WordPress or Medi
 2020 hasn't been the best year, but there are plenty of positive things happening which might be overshadowed by the negatives. I hope I can at least continue this project for long enough to have something to look back on and measure my progress as a developer, and maybe someone else will find this useful as well.
 
 ---
-
-Previous post: [Drexel Winter 2020 Week 2](blog/drexel-winter-2020-week-2)

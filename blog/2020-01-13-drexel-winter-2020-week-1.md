@@ -57,7 +57,3 @@ Practiced the ten core conversations to be memorized by Jan 22.
 Worked on the second assignment while the lecture went over material for the first assignment.
 
 ---
-
-Previous post: [Styling and Social Cards](blog/styling-and-social-cards)
-
-Next post: [Drexel Winter 2020 Week 2](blog/drexel-winter-2020-week-2)
